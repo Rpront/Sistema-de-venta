@@ -1,12 +1,18 @@
-from os import system    
+from tkinter import *
+from os import sys    
 #===========================#  Ajuste de ancho y largo de pantalla  #================================#
-system('mode con: cols=200 lines=49')
+ventana =Tk()                           # inicializar la variable de Ventana con tkinder incluido
+ventana.geometry("720x500")             # Tamaño de la pantalla
+ventana.configure(bg='black')
+
+
+ventana.mainloop()
 #===========================#                Menu                   #================================#
 print("Inventario")
 print("Ventas")
 print("Proveedores")
 print("Mercancia Faltante")
-print("Estadisiticas")
+
 num = input("Seleccione una opcion: ")
 
 
